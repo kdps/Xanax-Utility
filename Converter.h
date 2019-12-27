@@ -36,7 +36,8 @@ int main(
 	{
 		return errno;
 	}
-
+	
+	// https://inneka.com/programming/cpp/how-do-i-get-the-directory-that-a-program-is-running-from/
 	cCurrentPath[sizeof(cCurrentPath) - 1] = '\0'; /* not really required */
 
 	string currentCommandLinePath(cCurrentPath);
